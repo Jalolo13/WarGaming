@@ -1,0 +1,53 @@
+@import "../../app/_vars"
+
+.section-one
+    margin-bottom: 57px
+    
+.section-one-inner
+    background: url("bg/section-one-bg.png") center center no-repeat
+    max-width: 100%
+    margin-top: 26px
+    box-shadow: -33px 17px 29px rgba(0, 0, 0, 0)
+    border-radius: 15px
+    min-height: 900px
+    @extend %flex-center
+    @extend %flex-column
+
+.section-one-subtitle
+    font-weight: 500
+    line-height: 19px
+
+.title
+    font-size: 48px
+    font-family: 'Aire Exterior'
+    line-height: 48px
+
+.btn-upgrade
+    text-transform: uppercase
+    width: 251px
+    height: 61px
+    font-family: 'Aire Exterior'
+    font-size: 24px
+    line-height: 24px
+    position: relative
+    z-index: 1
+    color: #000
+    margin-top: 97px
+    background: #fff
+    transition: .3s
+    @extend %flex-center
+    &:hover
+        color: #fff
+        background: #000
+    &:before
+        content: ""
+        position: absolute
+        z-index: 1
+        top: 0
+        right: 0
+        border-bottom: 18px solid rgba(0,0,0,0)
+        border-right: 18px solid rgba(0, 0, 0, 1)
+        width: 18px
+        height: 0
+            
+
